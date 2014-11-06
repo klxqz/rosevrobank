@@ -1,0 +1,10 @@
+    {if $auto_submit}
+    <i class="icon16 loading"></i> <em>Перенаправление на сайт РосЕвроБанк для оплаты...</em>
+    <br /><br />
+    <script type="text/javascript">
+    setTimeout(function () {
+        document.location.href = '{$form_url}';
+    }, 3000);
+    </script>
+    {/if}
+    <button onclick="document.location.href = '{$form_url}'">Оплатить заказ через РосЕвроБанк</button>
